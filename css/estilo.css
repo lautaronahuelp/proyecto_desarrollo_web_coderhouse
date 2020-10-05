@@ -1,0 +1,381 @@
+body {
+  background-image: url("../images/wall1.jpg");
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif !important; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: black;
+    text-decoration: none; }
+
+/*NAVBAR*/
+.navbar {
+  background-color: #ffe744; }
+
+.navbar-collapse {
+  font-size: 1.5em; }
+
+.nav-link {
+  color: black;
+  font-weight: bold; }
+
+.dropdown-menu {
+  background-color: #ffe220; }
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+  color: black;
+  font-weight: bold;
+  background-color: #ffe744; }
+
+/*FOOTER*/
+.lefooter {
+  background-image: linear-gradient(#ffe744, #ffe220); }
+  .lefooter ul {
+    list-style: none; }
+
+.lefootredes__linkface {
+  display: inline-block;
+  font-size: 1.7em;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 5px; }
+  .lefootredes__linkface:hover {
+    text-decoration: underline dotted; }
+
+.lefootredes__iconoface {
+  background-color: white;
+  display: inline-block; }
+
+.lefooter__datita {
+  font-weight: bold; }
+
+@media (min-width: 992px) {
+  /*TANUNCIOS*/
+  .tabanuncios__botontab {
+    margin: auto;
+    text-align: center;
+    width: 200px; }
+    .tabanuncios__botontab a:hover {
+      font-weight: bold;
+      text-align: center;
+      margin: auto; }
+  #demo {
+    margin: 0px auto;
+    width: 50vw; }
+  .carousel-inner .carousel-item img {
+    width: 50vw; }
+  .tabanuncios__anuncios {
+    background-color: #ffe744; }
+  .tabanuncios {
+    background-color: #ffe220;
+    display: grid;
+    grid-template-areas: "pres anu anu anu" "conta anu anu anu" "histo anu anu anu";
+    /*height: 550px;*/
+    overflow: hidden;
+    /*width: 1000px;*/ }
+    .tabanuncios a {
+      color: black;
+      text-decoration: none; }
+  .tabanuncios__botontab--solipresugrid {
+    grid-area: pres; }
+  .tabanuncios__botontab--modicontagrid {
+    grid-area: conta; }
+  .tabanuncios__botontab--mihistogrid {
+    grid-area: histo; }
+  .tabanuncios__anuncios--anunciosgrid {
+    grid-area: anu; }
+  /*SECOFRE*/
+  .fas {
+    color: #ffdf10;
+    font-size: 120px;
+    text-shadow: 0 0 10px black; }
+  .ofrecemos {
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    padding: 0px; }
+    .ofrecemos p {
+      font-style: italic; }
+  .ofrecemos__servicio {
+    /*background-color: #C7C7C7;*/
+    background-image: linear-gradient(to bottom, #C7C7C7, #797979);
+    border-radius: 15px;
+    display: inline-block;
+    height: 270px;
+    margin: 0px 2px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    width: 300px; }
+  /*SERVICIOS*/
+  .conteservi__conser {
+    /*background-color: #C7C7C7;*/
+    /* margin: 1vh 15vw;*/
+    /*border-radius: 3px;
+      padding: 10px;*/
+    background: #c4c4c480;
+    color: #000000;
+    height: 400px;
+    margin-top: 48px;
+    padding-top: 15px;
+    position: relative; }
+    .conteservi__conser .conser__contenedorcentro {
+      height: 370px;
+      position: relative;
+      margin: auto;
+      width: 1250px; }
+    .conteservi__conser h3 {
+      font-size: 48px;
+      font-weight: bold;
+      display: inline-block;
+      position: absolute;
+      width: auto;
+      left: 550px;
+      top: 30px; }
+    .conteservi__conser img {
+      border-radius: 5px;
+      display: inline-block;
+      height: 320px;
+      position: absolute;
+      width: 505px;
+      left: 30px;
+      top: 25px; }
+    .conteservi__conser p {
+      font-size: 36px;
+      display: block;
+      line-height: 59px;
+      position: absolute;
+      width: 700px;
+      left: 550px;
+      top: 78px; }
+    .conteservi__conser a {
+      background-color: #ffe220;
+      border-radius: 5px;
+      font-size: 24px;
+      display: inline-block;
+      height: auto;
+      position: absolute;
+      width: auto;
+      left: 550px;
+      top: 250px;
+      padding: 2px; }
+      .conteservi__conser a:hover {
+        background-color: #ffe744;
+        font-style: normal; }
+  .conser--monitoreo div h3, .conser--coaccesos div h3 {
+    left: auto;
+    right: 550px; }
+  .conser--monitoreo div img, .conser--coaccesos div img {
+    left: auto;
+    right: 30px; }
+  .conser--monitoreo div p, .conser--coaccesos div p {
+    left: auto;
+    right: 550px;
+    text-align: right; }
+  .conser--monitoreo div a, .conser--coaccesos div a {
+    left: auto;
+    right: 550px; }
+  .conser--alarmas div h3 {
+    top: 40px; }
+  .conser--alarmas div p {
+    top: 90px; }
+  .conser--alarmas div a {
+    top: 230px; }
+  .conser--monitoreo div h3 {
+    top: 45px; }
+  .conser--monitoreo div p {
+    top: 95px; }
+  .conser--monitoreo div a {
+    top: 235px; }
+  .conser--cctv div h3 {
+    top: 45px; }
+  .conser--cctv div p {
+    top: 95px; }
+  .conser--cctv div a {
+    top: 235px; }
+  .conser--coaccesos div h3 {
+    top: 75px; }
+  .conser--coaccesos div p {
+    top: 125px; }
+  .conser--coaccesos div a {
+    top: 205px; }
+  .conteservi__conser--linkpresu {
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s, font-style 0.2s; }
+    .conteservi__conser--linkpresu:hover {
+      transition: background-color 0.2s, font-style 0.2s; }
+  .conser--titulo {
+    height: auto;
+    margin-top: 0;
+    padding: 1px 0;
+    width: auto; }
+    .conser--titulo h2 {
+      font-size: 54px;
+      font-weight: bold;
+      margin-right: auto;
+      margin-left: auto;
+      width: 590px; }
+  /*NOSOTROS*/
+  .nosEmpre, .contActo {
+    background-color: #C7C7C7;
+    margin: 1vh 15vw; }
+  /*CONTACTO*/
+  /*AREA CLIENTES*/
+  .loginArCli {
+    background: #c4c4c480;
+    border-radius: 15px;
+    margin: 150px auto;
+    padding: 20px;
+    text-align: center;
+    width: 300px; } }
+
+/*** MOBILE ***/
+@media (max-width: 991px) {
+  a {
+    color: black;
+    text-decoration: none; }
+  .tabanuncios__botontab {
+    text-align: center;
+    margin: 10px auto; }
+    .tabanuncios__botontab a:hover {
+      font-weight: bold;
+      text-align: center;
+      margin: auto; }
+  .fas {
+    display: inline-block;
+    color: #ffdf10;
+    font-size: 100px;
+    margin: auto 30px auto 10px;
+    text-shadow: 0 0 10px black; }
+  .fa-eye {
+    font-size: 80px; }
+  .fa-key {
+    font-size: 87px; }
+  header {
+    background-color: #ffe744;
+    display: flex;
+    flex-direction: column; }
+  .ofrecemos {
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 0px; }
+    .ofrecemos p {
+      font-style: italic; }
+  .ofrecemos__cuadrito {
+    font-size: 20px;
+    display: inline-block;
+    margin: auto 0px;
+    width: 70%; }
+  .ofrecemos__servicio {
+    /*background-color: #C7C7C7;*/
+    background-image: linear-gradient(to bottom, #C7C7C7, #797979);
+    border-radius: 15px;
+    display: flex;
+    /*height: 270px;*/
+    margin: 5px 5px 2px 0px;
+    overflow: hidden;
+    padding: 10px;
+    text-justify: initial;
+    width: 93%; }
+    .ofrecemos__servicio h3, .ofrecemos__servicio p {
+      display: block;
+      margin: 0;
+      padding: 0; }
+  .tabanuncios {
+    background-color: #ffe220;
+    font-size: 23px;
+    display: grid;
+    grid-template-areas: "anu" "pres" "conta" "histo";
+    /*height: 400px;*/
+    overflow: hidden;
+    margin: auto auto;
+    width: 100%; }
+    .tabanuncios .tabanuncios__botontab--solipresugrid {
+      grid-area: pres; }
+    .tabanuncios .tabanuncios__botontab--modicontagrid {
+      grid-area: conta; }
+    .tabanuncios .tabanuncios__botontab--mihistogrid {
+      grid-area: histo; }
+    .tabanuncios .tabanuncios__anuncios--anunciosgrid {
+      grid-area: anu; }
+    .tabanuncios img {
+      display: block;
+      width: 100%; }
+  /*SERVICIOS*/
+  .conteservi__conser {
+    font-size: 25px;
+    background-color: #C7C7C7;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 5px;
+    overflow: hidden;
+    width: 95%; }
+    .conteservi__conser * {
+      background-color: #C7C7C7; }
+    .conteservi__conser h2 {
+      font-weight: bold; }
+    .conteservi__conser h3 {
+      font-size: 25px;
+      font-weight: bold; }
+    .conteservi__conser table {
+      background-color: white;
+      margin: 0; }
+      .conteservi__conser table * {
+        background-color: white; }
+  .conteservi__conser--destactext {
+    font-style: italic;
+    font-weight: bold; }
+  .conteservi__conser--linkpresu {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s, font-style 0.2s; }
+    .conteservi__conser--linkpresu:hover {
+      background-color: gray;
+      font-style: italic;
+      transition: background-color 0.2s, font-style 0.2s; }
+  .conteservi {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "tit" "alarma" "moni" "cctv" "contracc";
+    text-align: center; }
+  .conser--titulo {
+    grid-area: tit; }
+  .conser--alarmas {
+    grid-area: alarma; }
+  .conser--monitoreo {
+    grid-area: moni; }
+  .conser--cctv {
+    grid-area: cctv; }
+  .conser--coaccesos {
+    grid-area: contracc; }
+  /*NOSOTROS*/
+  .nosEmpre {
+    font-size: 30px;
+    text-align: center;
+    background-color: #C7C7C7;
+    margin: 10px auto;
+    padding: 10px; }
+  /*CONTACTO*/
+  .contActo {
+    font-size: 20px;
+    background-color: #C7C7C7;
+    margin: 1vh auto;
+    padding: 15px; }
+    .contActo textarea {
+      width: 350px; }
+  /*AREA CLIENTES*/
+  .loginArCli {
+    text-align: center;
+    background-color: #C7C7C7;
+    margin: 1vh auto;
+    padding: 10px; } }
