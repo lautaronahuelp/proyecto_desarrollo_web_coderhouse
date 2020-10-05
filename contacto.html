@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactenos y solicite un presupuesto. Obtenga una solucion de seguridad personalizada que se adapte a sus necesidades y presupuesto.">
+    <meta name="keywords" content="alarmas, seguridad, monitoreo, servicio, protección, camaras, vigilancia, control, accesos, radial, gprs, telefonico, celular, solucion, personalizada">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <title>ALARMAS S.A. - Contacto</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-lg-4" href="index.html">
+            <img src="images/logo.png" alt="ALARMAS S.A.">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-4">
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">NOSOTROS<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SERVICIOS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="servicios.html#alarmas">ALARMAS</a>
+                <a class="dropdown-item" href="servicios.html#monitoreo">MONITOREO</a>
+                <a class="dropdown-item" href="servicios.html#cctv">CAMARAS DE VIGILANCIA</a>
+                <a class="dropdown-item" href="servicios.html#coaccesos">CONTROL DEL ACCESOS</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="clientes.html">AREA CLIENTES</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <section class="contActo">
+      <h2>CONTACTENOS Y SOLICITE UN PRESUPUESTO SIN CARGO</h2>
+      <form action="contactob.html">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Juan" id="nombre">
+        <br><br>
+        <label for="apelli">Apellido:</label>
+        <input type="text" name="apellido" placeholder="Perez" id="apelli">
+        <br><br>
+        <label for="mail">E-Mail:</label>
+        <input type="email" name="mail" placeholder="alarmas@mail.com" id="mail">
+        <input type="checkbox" name="mandamail" value="1" id="mandamail">
+        <label for="mandamail">Prefiero que me contacten solo por mail.</label>
+        <br><br>
+        <label for="caracteristicacel">Celular:</label>
+        <span>0</span><input type="number" name="caractc" placeholder="11" id="caracteristicacel"><span>-15</span><input type="number" name="numc" placeholder="2345678" id="numerocel">
+        <br><br>
+        <label for="caracteristicatel">Telefono:</label>
+        <span>0</span><input type="number" name="caractt" placeholder="11" id="caracteristicatel"><span>-</span><input type="number" name="numt" placeholder="4567890" id="numerotel">
+        <br><br>
+        <label for="calle">Calle:</label>
+        <input type="text" name="calle" placeholder="9 de Julio" id="calle">
+        <label for="numeroca">Número:</label>
+        <input type="number" name="numeroca" placeholder="1234" id="numeroca">
+        <label for="ciudad">Ciudad:</label>
+        <select name="ciudadp" id="ciudad">
+          <option value="1">Rosario</option>
+          <option value="2">Perez</option>
+          <option value="3">Baigorria</option>
+          <option value="4">Casilda</option>
+          <option value="5">Galvez</option>
+          <option value="6">San Lorenzo</option>
+          <option value="7">Otra(Especifique en comentarios)</option>
+        </select>
+        <br><br>
+        <label for="comen">Comentarios:</label><br>
+        <textarea name="coment" rows="8" cols="80" placeholder="Cuentenos lo que busca y lo contactaremos" id="comen"></textarea>
+        <br><br>
+        <input type="submit" value="ENVIAR"><input type="reset" value="LIMPIAR CAMPOS">
+      </form>
+
+    </section>
+    <footer class="container-fluid lefooter">
+      <div class="row justify-content-between p-2">
+        <ul class="lefooter__datita col-3 d-inline-block">
+         <li>CALLE RUE 1234</li>
+         <li>234-2345</li>
+         <li>ALARMAS S.A.</li>
+        </ul>
+        <div class="lefootredes d-flex align-items-center ml-auto">
+          <img class="lefootredes__iconoface"src="assets/facebook.png" alt="ENCUENTRENOS EN FACEBOOK" height="24px" width="24px">
+          <a class="lefootredes__linkface" href="http://www.facebook.com/">/alarmassa</a>
+        </div>
+      </div>
+    </footer>
+  <script src="https://kit.fontawesome.com/dff8227f02.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

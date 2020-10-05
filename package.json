@@ -1,0 +1,22 @@
+{
+  "name": "alarmassa",
+  "version": "1.0.0",
+  "description": "sitio web de empresa de alarmas para poryecto coderhouse",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "alarmas",
+    "seguridad",
+    "monitoreo"
+  ],
+  "author": "Lautaro Nahuel Peñalva",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
