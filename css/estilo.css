@@ -1,4 +1,5 @@
 body {
+  background-color: white;
   background-image: url("../images/wall1.jpg");
   background-attachment: fixed;
   font-family: "Montserrat", sans-serif !important; }
@@ -48,9 +49,6 @@ a {
   background-color: white;
   display: inline-block; }
 
-.lefooter__datita {
-  font-weight: bold; }
-
 @media (min-width: 992px) {
   /*TANUNCIOS*/
   .tabanuncios__botontab {
@@ -86,11 +84,17 @@ a {
     grid-area: histo; }
   .tabanuncios__anuncios--anunciosgrid {
     grid-area: anu; }
-  /*SECOFRE*/
+  /*FOOTER SECOFRE*/
   .fas {
     color: #ffdf10;
-    font-size: 120px;
-    text-shadow: 0 0 10px black; }
+    font-size: 12em;
+    /*text-shadow: 0 0 10px black;*/
+    background: -webkit-linear-gradient(#fbbc04, #ffe220);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .lefooter__datita {
+    font-size: 25px;
+    font-weight: bold; }
   .ofrecemos {
     /*background-color: red;*/
     display: flex;
@@ -101,16 +105,27 @@ a {
       font-style: italic; }
   .ofrecemos__servicio {
     /*background-color: #C7C7C7;*/
-    background-image: linear-gradient(to bottom, #C7C7C7, #797979);
+    /*background-image: linear-gradient(to bottom, #C7C7C7, #797979);*/
+    background-color: white;
     border-radius: 15px;
     display: inline-block;
-    height: 270px;
-    margin: 0px 2px;
+    height: 400px;
+    margin: 40px 2px 20px 2px;
     overflow: hidden;
-    padding: 10px;
+    padding: 70px 20px 50px;
     text-align: center;
-    width: 300px; }
+    width: 23vw; }
+    .ofrecemos__servicio .ofrecemos__cuadrito {
+      margin-top: 20px; }
+      .ofrecemos__servicio .ofrecemos__cuadrito h3 {
+        font-size: 2.2em;
+        font-weight: bold; }
+      .ofrecemos__servicio .ofrecemos__cuadrito p {
+        font-size: 25px; }
   /*SERVICIOS*/
+  .conteservi {
+    background-image: url("../images/yellow_white_office.jpg");
+    background-attachment: fixed; }
   .conteservi__conser {
     /*background-color: #C7C7C7;*/
     /* margin: 1vh 15vw;*/
