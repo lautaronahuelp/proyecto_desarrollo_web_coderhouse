@@ -238,6 +238,24 @@ a {
   .nosEmpre, .contActo {
     background-color: #C7C7C7;
     margin: 1vh 15vw; }
+  .nosotros {
+    background-image: url("../images/yellow_white_office.jpg");
+    background-attachment: fixed;
+    background-size: 100vw auto;
+    text-transform: uppercase; }
+    .nosotros h6 {
+      color: black;
+      font-weight: 900;
+      font-size: 89px;
+      position: relative;
+      margin-top: 200px;
+      margin-bottom: 100px; }
+    .nosotros .nosotros__texto--amarillo {
+      background: -webkit-linear-gradient(#fbbc04, #ffe220);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      font-size: 118px; }
   /*CONTACTO*/
   /*AREA CLIENTES*/
   .loginArCli {
@@ -247,6 +265,16 @@ a {
     padding: 20px;
     text-align: center;
     width: 300px; } }
+
+/***CORRECCIONES***/
+@media (max-width: 1500px) {
+  .nosotros {
+    margin: 0;
+    width: 100%; }
+    .nosotros h6 {
+      font-size: 50px; }
+    .nosotros .nosotros__texto--amarillo {
+      font-size: 67Px; } }
 
 /*** MOBILE ***/
 @media (max-width: 991px) {

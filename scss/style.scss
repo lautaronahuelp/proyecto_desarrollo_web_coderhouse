@@ -416,6 +416,38 @@ body {
       background-color: #C7C7C7;
       margin: 1vh 15vw;
     }
+
+    .nosotros {
+      background-image: url("../images/yellow_white_office.jpg");
+      background-attachment: fixed;
+      background-size: 100vw auto;
+      text-transform: uppercase;
+      
+      
+
+      h6{
+        color: black;
+        font-weight: 900;
+        font-size: 89px;
+        position:relative;
+        margin-top: 200px;
+        margin-bottom: 100px;
+      
+      }
+
+      .nosotros__texto--amarillo {
+        //color:$amarilloNosotros;
+        background: -webkit-linear-gradient($amarilloNaranjaPesado, $amarilloSolido);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: block;
+        font-size: 118px;
+  
+        
+      }
+    }
+
+    
   
     /*CONTACTO*/
   
@@ -431,6 +463,27 @@ body {
     }
   }
   
+  /***CORRECCIONES***/
+  @media (max-width: 1500px) {
+    .nosotros {
+      margin: 0;
+      width:100%;
+
+      h6{
+
+        font-size: 50px;
+   
+      
+      }
+
+      .nosotros__texto--amarillo {
+     
+        font-size: 67Px;
+  
+        
+      }
+    } 
+  }
   /*** MOBILE ***/
   @media (max-width: 991px) {
   
