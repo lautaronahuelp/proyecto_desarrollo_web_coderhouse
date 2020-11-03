@@ -21,9 +21,6 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mr-4">
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">NOSOTROS<span class="sr-only">(current)</span></a>
-            </li>
             
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,49 +42,64 @@
           </ul>
         </div>
       </nav>
-    <section class="contActo">
+    <section class="contacto">
       <h2>CONTACTENOS Y SOLICITE UN PRESUPUESTO SIN CARGO</h2>
       <form action="contactob.html">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" placeholder="Juan" id="nombre">
-        <br><br>
-        <label for="apelli">Apellido:</label>
-        <input type="text" name="apellido" placeholder="Perez" id="apelli">
-        <br><br>
-        <label for="mail">E-Mail:</label>
-        <input type="email" name="mail" placeholder="alarmas@mail.com" id="mail">
-        <input type="checkbox" name="mandamail" value="1" id="mandamail">
-        <label for="mandamail">Prefiero que me contacten solo por mail.</label>
-        <br><br>
-        <label for="caracteristicacel">Celular:</label>
-        <span>0</span><input type="number" name="caractc" placeholder="11" id="caracteristicacel"><span>-15</span><input type="number" name="numc" placeholder="2345678" id="numerocel">
-        <br><br>
-        <label for="caracteristicatel">Telefono:</label>
-        <span>0</span><input type="number" name="caractt" placeholder="11" id="caracteristicatel"><span>-</span><input type="number" name="numt" placeholder="4567890" id="numerotel">
-        <br><br>
-        <label for="calle">Calle:</label>
-        <input type="text" name="calle" placeholder="9 de Julio" id="calle">
-        <label for="numeroca">Número:</label>
-        <input type="number" name="numeroca" placeholder="1234" id="numeroca">
-        <label for="ciudad">Ciudad:</label>
-        <select name="ciudadp" id="ciudad">
-          <option value="1">Rosario</option>
-          <option value="2">Perez</option>
-          <option value="3">Baigorria</option>
-          <option value="4">Casilda</option>
-          <option value="5">Galvez</option>
-          <option value="6">San Lorenzo</option>
-          <option value="7">Otra(Especifique en comentarios)</option>
-        </select>
-        <br><br>
-        <label for="comen">Comentarios:</label><br>
-        <textarea name="coment" rows="8" cols="80" placeholder="Cuentenos lo que busca y lo contactaremos" id="comen"></textarea>
-        <br><br>
+        <div>
+          <label for="nombre">Nombre y apellido:</label>
+          <input type="text" name="nombre" placeholder="Juan Perez" id="nombre">
+        </div>
+        <div>
+          <label for="mail">E-Mail:</label>
+          <input type="email" name="mail" placeholder="alarmas@mail.com" id="mail">
+          <input type="checkbox" name="mandamail" value="1" id="mandamail">
+          <label for="mandamail">Contactenme solo por mail.</label>
+        </div>
+        <div>
+          <label for="caracteristicacel">Telefono/celular:</label>
+          <span>0</span><input type="number" name="caractc" placeholder="11" id="caracteristicacel"><span>-15</span><input type="number" name="numc" placeholder="2345678" id="numerocel">
+        </div>
+        <div>
+          <label for="comen">Comentarios/Observaciones:</label><br>
+          <textarea name="coment" rows="8" cols="80" placeholder="Cuentenos que necesita y lo contactaremos." id="comen"></textarea>
+        </div>
+        <div>
         <input type="submit" value="ENVIAR"><input type="reset" value="LIMPIAR CAMPOS">
+        </div>
       </form>
 
     </section>
     <footer class="container-fluid lefooter">
+      <section class="ofrecemos">
+        <article class="ofrecemos__servicio">
+          <span class="fas fa-bell"></span>
+          <div class="ofrecemos__cuadrito">
+            <h3>ALARMAS</h3>
+            <!--<p>INSTALACION Y MANTENIMIENTO DE SISTEMAS DE SEGURIDAD E INCENDIO.</p>-->
+          </div>
+        </article>
+        <article class="ofrecemos__servicio">
+          <span class="fas fa-user-secret"></span>
+          <div class="ofrecemos__cuadrito">
+            <h3>MONITOREO</h3>
+            <!--<p>CENTRAL DE MONITOREO PROPIA LAS 24HS.</p>-->
+          </div>
+        </article>
+        <article class="ofrecemos__servicio">
+          <span class="fas fa-eye"></span>
+          <div class="ofrecemos__cuadrito">
+            <h3>CAMARAS DE VIGILANCIA</h3>
+            <!--<p>ACCEDA A SUS CAMARAS DESDE CUALQUIER LUGAR DEL MUNDO.</p>-->
+          </div>
+        </article>
+        <article class="ofrecemos__servicio">
+          <span class="fas fa-key"></span>
+          <div class="ofrecemos__cuadrito">
+            <h3>CONTROL DE ACCESOS</h3>
+            <!--<p>CONTROLE EL INGRESO A SUS PROPIEDADES Y DE SUS EMPLEADOS.</p>-->
+          </div>
+        </article>
+      </section>
       <div class="row justify-content-between p-2">
         <ul class="lefooter__datita col-3 d-inline-block">
          <li>CALLE RUE 1234</li>

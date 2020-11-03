@@ -1,7 +1,10 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: white;
-  background-image: url("../images/wall1.jpg");
+  background-image: url("../images/yellow_white_office.jpg");
   background-attachment: fixed;
+  background-size: 100vw auto;
   font-family: "Montserrat", sans-serif !important; }
 
 a {
@@ -32,7 +35,8 @@ a {
 
 /*FOOTER*/
 .lefooter {
-  background-image: linear-gradient(#ffe744, #ffe220); }
+  background-image: linear-gradient(#ffe744, #ffe220);
+  margin-top: -10px; }
   .lefooter ul {
     list-style: none; }
 
@@ -72,6 +76,7 @@ a {
     grid-template-areas: "pres anu anu anu" "conta anu anu anu" "histo anu anu anu";
     /*height: 550px;*/
     overflow: hidden;
+    margin-top: 20px;
     /*width: 1000px;*/ }
     .tabanuncios a {
       color: black;
@@ -90,6 +95,7 @@ a {
     font-size: 12em;
     /*text-shadow: 0 0 10px black;*/
     background: -webkit-linear-gradient(#fbbc04, #ffe220);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .lefooter__datita {
@@ -123,9 +129,6 @@ a {
       .ofrecemos__servicio .ofrecemos__cuadrito p {
         font-size: 25px; }
   /*SERVICIOS*/
-  .conteservi {
-    background-image: url("../images/yellow_white_office.jpg");
-    background-attachment: fixed; }
   .conteservi__conser {
     /*background-color: #C7C7C7;*/
     /* margin: 1vh 15vw;*/
@@ -235,28 +238,45 @@ a {
       margin-left: auto;
       width: 590px; }
   /*NOSOTROS*/
-  .nosEmpre, .contActo {
-    background-color: #C7C7C7;
-    margin: 1vh 15vw; }
   .nosotros {
-    background-image: url("../images/yellow_white_office.jpg");
-    background-attachment: fixed;
-    background-size: 100vw auto;
-    text-transform: uppercase; }
+    /*background-image: url("../images/yellow_white_office.jpg");
+      background-attachment: fixed;
+      background-size: 100vw auto;*/
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+    .nosotros .nosotros__separador {
+      background-color: #ffdf10;
+      height: 100px;
+      margin-top: 20px; }
     .nosotros h6 {
       color: black;
       font-weight: 900;
       font-size: 89px;
       position: relative;
       margin-top: 200px;
-      margin-bottom: 100px; }
+      margin-bottom: 180px; }
     .nosotros .nosotros__texto--amarillo {
       background: -webkit-linear-gradient(#fbbc04, #ffe220);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: block;
       font-size: 118px; }
   /*CONTACTO*/
+  .contacto {
+    background: #c4c4c480;
+    border-radius: 15px;
+    margin: 150px auto;
+    padding: 30px 80px;
+    width: 1000px; }
+    .contacto h2 {
+      font-weight: 900;
+      margin: 10px auto; }
+    .contacto label {
+      font-size: 25px; }
+    .contacto input:focus {
+      outline-color: #fbbc04; }
   /*AREA CLIENTES*/
   .loginArCli {
     background: #c4c4c480;
