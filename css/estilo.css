@@ -304,6 +304,10 @@ a {
       font-size: 25px; }
     .contacto input:focus {
       outline-color: #fbbc04; }
+  #caracteristicacel {
+    width: 50px; }
+  #numerocel {
+    width: 100px; }
   /*AREA CLIENTES*/
   .loginArCli {
     background: #c4c4c480;
@@ -426,26 +430,6 @@ a {
       display: block;
       width: 100%; }
   /*SERVICIOS*/
-  .conteservi__conser {
-    font-size: 25px;
-    background-color: #C7C7C7;
-    margin: 0 auto;
-    border-radius: 3px;
-    padding: 5px;
-    overflow: hidden;
-    width: 95%; }
-    .conteservi__conser * {
-      background-color: #C7C7C7; }
-    .conteservi__conser h2 {
-      font-weight: bold; }
-    .conteservi__conser h3 {
-      font-size: 25px;
-      font-weight: bold; }
-    .conteservi__conser table {
-      background-color: white;
-      margin: 0; }
-      .conteservi__conser table * {
-        background-color: white; }
   .conteservi__conser--destactext {
     font-style: italic;
     font-weight: bold; }
@@ -462,9 +446,41 @@ a {
       transition: background-color 0.2s, font-style 0.2s; }
   .conteservi {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-areas: "tit" "alarma" "moni" "cctv" "contracc";
+    margin-bottom: 40px;
     text-align: center; }
+    .conteservi .conteservi__conser {
+      color: black;
+      font-size: 25px;
+      background-color: #c4c4c480;
+      margin: 0 auto;
+      border-radius: 3px;
+      padding: 5px;
+      overflow: hidden;
+      width: 95%; }
+      .conteservi .conteservi__conser h2 {
+        font-weight: bold; }
+      .conteservi .conteservi__conser .conser__contenedorcentro h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-weight: bold; }
+      .conteservi .conteservi__conser .conser__contenedorcentro img {
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 320px; }
+      .conteservi .conteservi__conser .conser__contenedorcentro a {
+        background-color: #ffe220;
+        border-radius: 5px;
+        font-size: 24px;
+        display: inline-block;
+        height: auto;
+        padding: 2px; }
+        .conteservi .conteservi__conser .conser__contenedorcentro a:hover {
+          background-color: #ffe744;
+          font-style: normal; }
   .conser--titulo {
     grid-area: tit; }
   .conser--alarmas {
@@ -499,16 +515,42 @@ a {
       display: block;
       font-size: 40px; }
   /*CONTACTO*/
-  .contActo {
-    font-size: 20px;
-    background-color: #C7C7C7;
-    margin: 1vh auto;
-    padding: 15px; }
-    .contActo textarea {
-      width: 350px; }
+  .contacto {
+    background: #c4c4c480;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 5px 15px;
+    width: 350px; }
+    .contacto h2 {
+      font-weight: 900;
+      margin: 10px auto; }
+    .contacto label {
+      display: block;
+      font-size: 25px; }
+    .contacto input:focus {
+      outline-color: #fbbc04; }
+  #caracteristicacel {
+    width: 50px; }
+  #numerocel {
+    width: 100px; }
+  #checkmail {
+    display: block; }
+    #checkmail label {
+      display: inline-block;
+      font-size: 20px; }
+  #comen {
+    width: 290px;
+    margin: 0 auto; }
+  #botones {
+    display: inline-block;
+    margin: 10px auto; }
+  #labelcomen {
+    display: inline-block; }
   /*AREA CLIENTES*/
   .loginArCli {
+    background: #c4c4c480;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 20px;
     text-align: center;
-    background-color: #C7C7C7;
-    margin: 1vh auto;
-    padding: 10px; } }
+    width: 300px; } }

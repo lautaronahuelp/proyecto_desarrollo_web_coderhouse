@@ -52,18 +52,20 @@
         <div>
           <label for="mail">E-Mail:</label>
           <input type="email" name="mail" placeholder="alarmas@mail.com" id="mail">
-          <input type="checkbox" name="mandamail" value="1" id="mandamail">
-          <label for="mandamail">Contactenme solo por mail.</label>
+          <div id="checkmail">
+            <input type="checkbox" name="mandamail" value="1" id="mandamail">
+            <label for="mandamail">Contactenme solo por mail.</label>
+          </div>
         </div>
         <div>
-          <label for="caracteristicacel">Telefono/celular:</label>
+          <label for="caracteristicacel">Celular:</label>
           <span>0</span><input type="number" name="caractc" placeholder="11" id="caracteristicacel"><span>-15</span><input type="number" name="numc" placeholder="2345678" id="numerocel">
         </div>
         <div>
-          <label for="comen">Comentarios/Observaciones:</label><br>
+          <label id="labelcomen" for="comen">Comentarios:</label><br>
           <textarea name="coment" rows="8" cols="80" placeholder="Cuentenos que necesita y lo contactaremos." id="comen"></textarea>
         </div>
-        <div>
+        <div id="botones">
         <input type="submit" value="ENVIAR"><input type="reset" value="LIMPIAR CAMPOS">
         </div>
       </form>

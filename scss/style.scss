@@ -514,6 +514,14 @@ body {
         outline-color: $amarilloNaranjaPesado
       }
     }
+
+    #caracteristicacel {
+      width:50px;
+    }
+    
+    #numerocel {
+      width:100px;
+    }
   
     /*AREA CLIENTES*/
   
@@ -686,7 +694,7 @@ body {
       font-size: 23px;
       display: grid;
       grid-template-areas: "anu" "pres" "conta" "histo";
-  
+      
       /*height: 400px;*/
       overflow: hidden;
       margin: auto auto;
@@ -715,39 +723,9 @@ body {
     }
   
     /*SERVICIOS*/
-  
-    .conteservi__conser {
-      font-size: 25px;
-      background-color: #C7C7C7;
-      margin: 0 auto;
-      border-radius: 3px;
-      padding: 5px;
-      overflow: hidden;
-      width: 95%;
-  
-      * {
-        background-color: #C7C7C7;
-      }
-  
-      h2 {
-        font-weight: bold;
-      }
-
-      h3 {
-        font-size: 25px;
-        font-weight: bold;
-      }
-  
-      table {
-        background-color: white;
-        margin: 0;
-  
-        * {
-          background-color: white;
-        }
-      }
-    }
-  
+    
+    
+    
     .conteservi__conser--destactext {
       font-style: italic;
       font-weight: bold;
@@ -770,9 +748,65 @@ body {
   
     .conteservi {
       display: grid;
-      grid-gap: 10px;
+      grid-gap: 20px;
       grid-template-areas: "tit" "alarma" "moni" "cctv" "contracc";
+      margin-bottom:40px;
       text-align: center;
+
+      .conteservi__conser {
+        color: black;
+        font-size: 25px;
+        background-color: #c4c4c480;
+        margin: 0 auto;
+        border-radius: 3px;
+        padding: 5px;
+        overflow: hidden;
+        width: 95%;
+    
+        
+    
+        h2 {
+          font-weight: bold;
+        }
+  
+        .conser__contenedorcentro {
+          h3 {
+            margin-top:20px;
+            margin-bottom:20px;
+            font-size: 40px;
+            font-weight: bold;
+           
+          }
+    
+          img {
+          
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom:20px;
+            
+            width: 320px;
+  
+          }
+  
+          a {
+          
+            background-color: $amarilloSolido;
+            border-radius: 5px;
+            font-size: 24px;
+            display: inline-block;
+            height: auto;
+        
+            padding: 2px;
+            &:hover {
+              background-color: $amarilloNavbar;
+              font-style: normal;
+            }
+          }
+          
+  
+          
+        }
+      }
     }
   
     .conser--titulo {
@@ -794,6 +828,11 @@ body {
     .conser--coaccesos {
       grid-area: contracc;
     }
+
+    
+
+   
+
   
     /*NOSOTROS*/
   
@@ -834,24 +873,69 @@ body {
 
   
     /*CONTACTO*/
-  
-    .contActo {
-      font-size: 20px;
-      background-color: #C7C7C7;
-      margin: 1vh auto;
-      padding: 15px;
-  
-      textarea {
-        width: 350px;
+
+    .contacto {
+      background: #c4c4c480;
+      border-radius: 15px;      
+      margin: 30px auto;
+      padding: 5px 15px;
+      
+      width: 350px;
+
+      h2 {
+        font-weight: 900;
+        margin: 10px auto;
+      }
+
+      label {
+        display:block;
+        font-size:25px
+
+      }
+      
+      input:focus {
+        outline-color: $amarilloNaranjaPesado
       }
     }
-  
+
+    #caracteristicacel {
+      width:50px;
+    }
+    
+    #numerocel {
+      width:100px;
+    }
+
+    #checkmail {
+      display:block;
+      
+      label {
+        display:inline-block;
+        font-size:20px;
+      }
+    }
+
+    #comen {
+      width: 290px;
+      margin: 0 auto;
+    }
+    
+    #botones{
+      display: inline-block;
+      margin: 10px auto;
+    }
+
+    #labelcomen {
+      display:inline-block;
+    }
     /*AREA CLIENTES*/
   
     .loginArCli {
+      background: #c4c4c480;
+      border-radius: 15px;      
+      margin: 30px auto;
+      padding: 20px;
       text-align: center;
-      background-color: #C7C7C7;
-      margin: 1vh auto;
-      padding: 10px;
+      width: 300px;
     }
   }
