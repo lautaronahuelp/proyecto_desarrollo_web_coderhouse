@@ -315,7 +315,10 @@ a {
     margin: 150px auto;
     padding: 20px;
     text-align: center;
-    width: 300px; } }
+    width: 300px; }
+    .loginArCli h2 {
+      font-size: 30px;
+      font-weight: bold; } }
 
 /***CORRECCIONES***/
 @media (max-width: 1500px) {
@@ -553,4 +556,7 @@ a {
     margin: 30px auto;
     padding: 20px;
     text-align: center;
-    width: 300px; } }
+    width: 300px; }
+    .loginArCli h2 {
+      font-size: 30px;
+      font-weight: bold; } }
