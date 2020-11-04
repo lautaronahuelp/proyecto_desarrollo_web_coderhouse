@@ -509,7 +509,8 @@ a {
       font-size: 30px;
       position: relative;
       margin-top: 200px;
-      margin-bottom: 180px; }
+      margin-bottom: 180px;
+      margin-left: 7px; }
     .nosotros .nosotros__texto--amarillo {
       background: -webkit-linear-gradient(#fbbc04, #ffe220);
       background-clip: text;
