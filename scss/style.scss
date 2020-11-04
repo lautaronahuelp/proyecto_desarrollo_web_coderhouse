@@ -54,6 +54,15 @@ body {
   
   /*FOOTER*/
   
+  .fas {
+    color: $amarilloIcono;
+    /*text-shadow: 0 0 10px black;*/
+    background: -webkit-linear-gradient($amarilloNaranjaPesado, $amarilloSolido);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .lefooter {
     background-image: linear-gradient($amarilloNavbar,$amarilloSolido);
     margin-top: -10px;
@@ -79,6 +88,21 @@ body {
     display: inline-block;
   }
   
+  .ofrecemos__servicio {
+    background-color: white;
+    
+    border-radius: 15px;
+
+    /*height: 270px;*/
+    overflow: hidden;
+
+
+    h3, p {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
   
   
   @media (min-width: 992px) {
@@ -158,6 +182,23 @@ body {
     .lefooter__datita {
       font-size: 25px;
       font-weight: bold;
+    }
+
+    .lefootredes__linkface {
+    
+      font-size: 2.7em;
+      font-style: italic;
+      font-weight: bold;
+
+    
+      
+    }
+    
+    .lefootredes__iconoface {
+      background-color: white;
+      display: inline-block;
+      height: 40px;
+      width:40px;
     }
   
     .ofrecemos {
@@ -509,6 +550,12 @@ body {
   }
   /*** MOBILE ***/
   @media (max-width: 991px) {
+    
+    body {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: -220px;
+    }
   
     a {
       color: black;
@@ -531,7 +578,6 @@ body {
       color: $amarilloIcono;
       font-size: 100px;
       margin: auto 30px auto 10px;
-      text-shadow: 0 0 10px black;
     }
   
     .fa-eye {
@@ -546,6 +592,51 @@ body {
       background-color: $amarilloNavbar;
       display: flex;
       flex-direction: column;
+    }
+
+    .lefooter {
+      background-image: linear-gradient($amarilloNavbar,$amarilloSolido);
+      margin-top: -10px;
+      ul {
+        list-style: none;
+        li {
+          font-size: 20px;
+          font-weight: bold;
+
+        }
+      }
+
+      .lefooter__datita{
+        //position:absolute;
+        width:100%;
+
+        margin: 20px auto;
+        margin-bottom: 40px;
+
+        //width:270px;
+      }
+    }
+
+    .lefootredes {
+      padding-left: 23vw;
+    }
+
+    
+    .lefootredes__linkface {
+      display: inline-block;
+      font-size: 1.7em;
+      font-style: italic;
+      font-weight: bold;
+      margin-left: 5px;
+    
+      &:hover {
+        text-decoration: underline dotted;
+      }
+    }
+    
+    .lefootredes__iconoface {
+      background-color: white;
+      display: inline-block;
     }
   
     .ofrecemos {
@@ -566,12 +657,14 @@ body {
       display: inline-block;
       margin: auto 0px;
       width: 70%;
+
+      h3{
+        font-weight: bold;
+      }
     }
   
     .ofrecemos__servicio {
-      /*background-color: #C7C7C7;*/
-      background-image: linear-gradient(to bottom, #C7C7C7, #797979);
-      border-radius: 15px;
+
       display: flex;
   
       /*height: 270px;*/
@@ -704,13 +797,41 @@ body {
   
     /*NOSOTROS*/
   
-    .nosEmpre {
-      font-size: 30px;
-      text-align: center;
-      background-color: #C7C7C7;
-      margin: 10px auto;
-      padding: 10px;
+    .nosotros {
+
+      
+      text-transform: uppercase;
+      margin:0;
+      padding:0;
+      .nosotros__separador{
+        background-color: $amarilloIcono;
+        height: 50px;
+        margin-top:20px;
+      }
+
+      h6{
+        color: black;
+        font-weight: 900;
+        font-size: 30px;
+        position:relative;
+        margin-top: 200px;
+        margin-bottom: 180px;
+      
+      }
+
+      .nosotros__texto--amarillo {
+        //color:$amarilloNosotros;
+        background: -webkit-linear-gradient($amarilloNaranjaPesado, $amarilloSolido);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: block;
+        font-size: 40px;
+  
+        
+      }
     }
+
   
     /*CONTACTO*/
   

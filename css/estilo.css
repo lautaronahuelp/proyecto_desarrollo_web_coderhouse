@@ -34,6 +34,14 @@ a {
   background-color: #ffe744; }
 
 /*FOOTER*/
+.fas {
+  color: #ffdf10;
+  /*text-shadow: 0 0 10px black;*/
+  background: -webkit-linear-gradient(#fbbc04, #ffe220);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .lefooter {
   background-image: linear-gradient(#ffe744, #ffe220);
   margin-top: -10px; }
@@ -52,6 +60,16 @@ a {
 .lefootredes__iconoface {
   background-color: white;
   display: inline-block; }
+
+.ofrecemos__servicio {
+  background-color: white;
+  border-radius: 15px;
+  /*height: 270px;*/
+  overflow: hidden; }
+  .ofrecemos__servicio h3, .ofrecemos__servicio p {
+    display: block;
+    margin: 0;
+    padding: 0; }
 
 @media (min-width: 992px) {
   /*TANUNCIOS*/
@@ -101,6 +119,15 @@ a {
   .lefooter__datita {
     font-size: 25px;
     font-weight: bold; }
+  .lefootredes__linkface {
+    font-size: 2.7em;
+    font-style: italic;
+    font-weight: bold; }
+  .lefootredes__iconoface {
+    background-color: white;
+    display: inline-block;
+    height: 40px;
+    width: 40px; }
   .ofrecemos {
     /*background-color: red;*/
     display: flex;
@@ -298,6 +325,10 @@ a {
 
 /*** MOBILE ***/
 @media (max-width: 991px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -220px; }
   a {
     color: black;
     text-decoration: none; }
@@ -312,8 +343,7 @@ a {
     display: inline-block;
     color: #ffdf10;
     font-size: 100px;
-    margin: auto 30px auto 10px;
-    text-shadow: 0 0 10px black; }
+    margin: auto 30px auto 10px; }
   .fa-eye {
     font-size: 80px; }
   .fa-key {
@@ -322,6 +352,31 @@ a {
     background-color: #ffe744;
     display: flex;
     flex-direction: column; }
+  .lefooter {
+    background-image: linear-gradient(#ffe744, #ffe220);
+    margin-top: -10px; }
+    .lefooter ul {
+      list-style: none; }
+      .lefooter ul li {
+        font-size: 20px;
+        font-weight: bold; }
+    .lefooter .lefooter__datita {
+      width: 100%;
+      margin: 20px auto;
+      margin-bottom: 40px; }
+  .lefootredes {
+    padding-left: 23vw; }
+  .lefootredes__linkface {
+    display: inline-block;
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 5px; }
+    .lefootredes__linkface:hover {
+      text-decoration: underline dotted; }
+  .lefootredes__iconoface {
+    background-color: white;
+    display: inline-block; }
   .ofrecemos {
     /*background-color: red;*/
     display: flex;
@@ -336,10 +391,9 @@ a {
     display: inline-block;
     margin: auto 0px;
     width: 70%; }
+    .ofrecemos__cuadrito h3 {
+      font-weight: bold; }
   .ofrecemos__servicio {
-    /*background-color: #C7C7C7;*/
-    background-image: linear-gradient(to bottom, #C7C7C7, #797979);
-    border-radius: 15px;
     display: flex;
     /*height: 270px;*/
     margin: 5px 5px 2px 0px;
@@ -422,12 +476,28 @@ a {
   .conser--coaccesos {
     grid-area: contracc; }
   /*NOSOTROS*/
-  .nosEmpre {
-    font-size: 30px;
-    text-align: center;
-    background-color: #C7C7C7;
-    margin: 10px auto;
-    padding: 10px; }
+  .nosotros {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+    .nosotros .nosotros__separador {
+      background-color: #ffdf10;
+      height: 50px;
+      margin-top: 20px; }
+    .nosotros h6 {
+      color: black;
+      font-weight: 900;
+      font-size: 30px;
+      position: relative;
+      margin-top: 200px;
+      margin-bottom: 180px; }
+    .nosotros .nosotros__texto--amarillo {
+      background: -webkit-linear-gradient(#fbbc04, #ffe220);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      font-size: 40px; }
   /*CONTACTO*/
   .contActo {
     font-size: 20px;
